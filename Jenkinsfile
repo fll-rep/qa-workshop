@@ -19,7 +19,7 @@ pipeline {
                 sh '''
                     npx playwright test --list
                     npx playwright test
-                    cat playwright-report/index.html
+                    open playwright-report/index.html
                    ''' 
             }
         }
